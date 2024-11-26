@@ -10,7 +10,6 @@
 #include <SoftwareSerial.h>
 #include <DFPlayerMini_Fast.h>
 
-
 #define START_PIN 2   // Start button pin
 #define RESTART_PIN 3 // Restart button pin
 #define MP3_TX 4      // MP3 player TX pin
@@ -23,7 +22,8 @@
 
 // Define the number of devices in the chain
 int numberOfHorizontalDisplays = 1; // Number of horizontal displays
-int numberOfVerticalDisplays = 12;   // Number of vertical displays
+int numberOfVerticalDisplays = 16;   // Number of vertical displays
+int offset = numberOfVerticalDisplays*4; // number of displays / 2 = 1 row * 8 leds (pixels) == N*4
 // User defined constants for durations in miliseconds
 #define blinkDuration 500 // Duration to blink in milliseconds
 #define minWaitTime 5000 // Minimum wait time when Automatic start by mp3 module
@@ -310,7 +310,7 @@ void blinkTime(int displayNumber) {
         matrix.print(szTime1); // Print the elapsed time for display 1
       }
       // Display second time
-      matrix.setCursor(48, 0); // Set cursor to the start for display 2
+      matrix.setCursor(offset, 0); // Set cursor to the start for display 2
       matrix.print(szTime2); // Print the elapsed time for display 2
     } else if (displayNumber == 2) {
       // Display first time
@@ -318,7 +318,7 @@ void blinkTime(int displayNumber) {
       matrix.print(szTime1); // Print the elapsed time for display 1
       // Blink second time
       if (blinkState) {
-        matrix.setCursor(48, 0); // Set cursor to the start for display 2
+        matrix.setCursor(offset, 0); // Set cursor to the start for display 2
         matrix.print(szTime2); // Print the elapsed time for display 2
       }
     }
