@@ -8,13 +8,13 @@
 
 #define START_PIN 2   // Start button pin
 #define RESTART_PIN 3 // Restart button pin
-#define CSN 8         // Chip Select pin of nRF24 module (negate)
-#define CE 9          // Chip Enable pin of nRF24 module (nRF24L01)
+#define CSN 9         // Chip Select pin of nRF24 module (negate)
+#define CE 10          // Chip Enable pin of nRF24 module (nRF24L01)
 
 // MAX7219 configuration
 #define DATA_IN 6    // Data pin for MAX7219
-#define CLK 7        // Clock pin for MAX7219
-#define CS_PIN 5     // Chip Select pin for MAX7219
+#define CLK 8        // Clock pin for MAX7219
+#define CS_PIN 7     // Chip Select pin for MAX7219
 LedControl lc = LedControl(DATA_IN, CLK, CS_PIN, 2); // 2 devices connected
 
 #define blinkDuration 500 // Duration to blink in milliseconds
