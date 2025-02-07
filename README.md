@@ -2,7 +2,6 @@
 
 ## Description
 FireSport Stopwatch Wireless is a precision timing solution designed specifically for FireSport competitions, where participants run 100 meters and take down two targets with spray of water. This project aims to establish a wireless connection between a base unit (which starts, counts, and displays the time) and two endpoints (Left and Right targets) that stop the timer when a magnetic switch is pressed. The visual signalization is handled via an 8x8 LED matrix using the MAX7219 driver. 
-
 The communication between the units is facilitated by the nRF24L01+PA+LNA modules, and the system is powered by Arduino Nano microcontrollers. The time is displayed using 7-segment displays using the MAX7219 driver, with smaller ones for training and a DIY version for competitions.
 
 ## Features
@@ -15,12 +14,15 @@ The communication between the units is facilitated by the nRF24L01+PA+LNA module
 - MAX7219 for driving 7-segment displays and 8x8 LED matrix
 - Magnetic switches for stopping the timer
 - Start timing via button press (automatic start via sound may be added)
-
+![Description of Image 1](photos/image1.jpg)
+![Description of Image 2](photos/image2.jpg)
 ## Installation
 To get started, you can find the Arduino code in the [GitHub repository](https://github.com/yourusername/FireSport_Stopwatch-Wireless). The code is well-documented for easy understanding and modification.
-
+![Description of Image 1](photos/image1.jpg)
+![Description of Image 2](photos/image2.jpg)
 Additionally, an article detailing the PCB design and 3D printed parts will be added soon. For ordering and assembly inquiries, please contact me via email.
-
+![Description of Image 1](photos/image1.jpg)
+![Description of Image 2](photos/image2.jpg)
 ## Usage
 This stopwatch can be used for timing fire attack drills and low-level competitions. Please note that it has not yet obtained any precision certification.
 
