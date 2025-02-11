@@ -13,11 +13,11 @@
 
 // MAX7219 configuration
 #define DATA_IN 6    // Data pin for MAX7219
-#define CLK 8        // Clock pin for MAX7219
-#define CS_PIN 7     // Chip Select pin for MAX7219
+#define CLK 7        // Clock pin for MAX7219
+#define CS_PIN 8     // Chip Select pin for MAX7219
 LedControl lc = LedControl(DATA_IN, CLK, CS_PIN, 2); // 2 devices connected
 
-#define blinkDuration 500 // Duration to blink in milliseconds
+#define blinkDuration 1000 // Duration to blink in milliseconds
 
 unsigned long startTime1 = 0; // Timer start time for display 1
 unsigned long startTime2 = 0; // Timer start time for display 2
@@ -63,7 +63,7 @@ void setup() {
   lc.clearDisplay(0);          // Clear display register for the first display
   lc.clearDisplay(1);          // Clear display register for the second display
   Serial.println("MAX7219 Initialized");
-
+  delay(1000);
   // nRF24 setting
   if (!radio.begin()) { // Initialize RF24
     Serial.println(F("Radio hardware not responding!"));
