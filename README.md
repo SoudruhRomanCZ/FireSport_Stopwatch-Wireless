@@ -16,7 +16,7 @@ The communication between the units is facilitated by the nRF24L01+PA+LNA module
 - Start timing via button press (automatic start via sound may be added)
 
 ## Installation
-To get started, you can find the Arduino code in the [GitHub repository]([https://github.com/yourusername/FireSport_Stopwatch-Wireless)](Codes). The code is well-documented for easy understanding and modification.
+To get started, you can find the Arduino code in the [GitHub repository](https://github.com/SoudruhRomanCZ/FireSport_Stopwatch-Wireless/tree/main/Codes). The code is well-documented for easy understanding and modification.
 ![Description of Image 1](photos/diagram2.jpeg)
 Additionally, an article detailing the PCB design and 3D printed parts will be added soon. For ordering and assembly inquiries, please contact me via email.
 
