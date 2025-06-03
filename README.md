@@ -30,7 +30,7 @@ Contributions are welcome! You can review the code and suggest changes to optimi
 This project is licensed under the [GPL-3.0 License](https://opensource.org/licenses/GPL-3.0). The code is written in the Arduino IDE, and as per Arduino's guidelines, it is intended to be free and cannot be monetized.
 
 ## Contact
-For questions, feedback, or collaboration inquiries, please reach out to me at [your-email@example.com].
+For questions, feedback, or collaboration inquiries, please reach out to me at [krivanekroman76@gmail.com].
 
 ## Additional Sections
 ### Testing
